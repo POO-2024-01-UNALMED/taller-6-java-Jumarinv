@@ -6,13 +6,18 @@ public class Fabricante {
 	private String nombre;
 	private Pais pais;
 	private int vehiculosCreados;
-	private ArrayList<Vehiculo> vehiculos;
+	private ArrayList<Vehiculo> vehiculos = new ArrayList <Vehiculo> ();
 	private static ArrayList <Fabricante> fabricantes;
 	
 	
 	public Fabricante (String nombre, Pais pais) {
 		
 		this.nombre = nombre; this.pais = pais;
+		
+		if (fabricantes == null) {
+			
+			fabricantes = new ArrayList <Fabricante> ();
+		}
 		
 		fabricantes.add(this);
 	}

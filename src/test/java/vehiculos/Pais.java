@@ -8,7 +8,7 @@ public class Pais {
 	
 	private int vehiculosCreados;
 	
-	private ArrayList<Vehiculo> vehiculos;
+	private ArrayList<Vehiculo> vehiculos = new ArrayList <Vehiculo> ();
 	
 	private static ArrayList <Pais> paises;
 	
@@ -16,6 +16,11 @@ public class Pais {
 	public Pais (String nombre) {
 		
 		this.nombre = nombre;
+		
+		if (paises == null) {
+			
+			paises = new ArrayList <Pais> ();
+		}
 		
 		paises.add(this);
 		
