@@ -73,5 +73,7 @@ public class Vehiculo {
 	
 	
 	public static int getCantidadVehiculos () {return(cantidadVehiculos);}
+	
+	public static void setCantidadVehiculos (int num) {cantidadVehiculos = num;}
 
 }
